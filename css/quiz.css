@@ -1,0 +1,231 @@
+/* Quiz CSS Style Sheet inspired by the tutorial provided by http://spolearninglab.com/curriculum/SEP/2015/unit_01/drag_and_drop.html*/
+
+
+/* body style: set default colors and font*/
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background-color: #bbbbbb;
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+}
+
+html {
+	height: 100%;
+}
+ /* draggable blocks = answer blocks */
+#draggableBlocks {
+  margin: 0 auto;
+  background: #04bf9d;
+}
+ 
+/* target area = questions: where the draggable block appends to */
+#targetArea {
+  margin: 0 auto;
+  background: #464646;
+}
+ 
+/* style for the containers of the quiz content */
+ #draggableBlocks, #targetArea {
+  width: auto;
+  height: 350px;
+  padding: 1%;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+  display: block;
+  text-align: center;
+ }
+ 
+/* Individual dragable blocks and targets and slots */
+ 
+ #draggableBlocks div, #targetArea div {
+  float: left;
+  width: 13vw;
+  height: 150px;
+  padding: 1px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 1%;
+  background: #fff;
+}
+ 
+#draggableBlocks div:first-child, #targetArea div:first-child  {
+  margin-left: 0;
+}
+ 
+#targetArea div.hovered {
+  background: #aaa;
+}
+ 
+#targetArea div {
+  border-style: dashed;
+}
+ 
+#draggableBlocks div {
+  background: #666;
+  color: #fff;
+  font-size: .8em;
+  text-shadow: 0 2px 2px #000;
+}
+ 
+#draggableBlocks div.ui-draggable-dragging {
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+ 
+/* Individually colored successful targets (when matched) */
+ 
+#target1.correct { 
+  background: green; 
+  float: left;
+  width: 13vw;
+  height: 150px;
+  padding: 1px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 1%;
+}
+#target2.correct { 
+  background: green; 
+  float: left;
+  width: 13vw;
+  height: 150px;
+  padding: 1px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 1%;
+}
+#target3.correct { 
+  background: green; 
+  float: left;
+  width: 13vw;
+  height: 150px;
+  padding: 1px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 1%;
+}
+#target4.correct { 
+  background: green; 
+  float: left;
+  width: 13vw;
+  height: 150px;
+  padding: 1px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 1%;
+}
+#target5.correct { 
+  background: green; 
+  float: left;
+  width: 13vw;
+  height: 150px;
+  padding: 1px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 1%;
+}
+#target6.correct { 
+  background: green; 
+  float: left;
+  width: 13vw;
+  height: 150px;
+  padding: 1px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 1%;
+}
+#target7.correct { 
+  background: green; 
+  float: left;
+  width: 13vw;
+  height: 150px;
+  padding: 1px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 1%;
+}
+#target8.correct { 
+  background: green; 
+  float: left;
+  width: 13vw;
+  height: 150px;
+  padding: 1px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 1%;
+}
+#target9.correct { 
+  background: green; 
+  float: left;
+  width: 13vw;
+  height: 150px;
+  padding: 1px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 1%;
+}
+#target10.correct { 
+  background: green; 
+  float: left;
+  width: 13vw;
+  height: 150px;
+  padding: 1px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 1%;
+}
+#target11.correct { 
+  background: green; 
+  float: left;
+  width: 13vw;
+  height: 150px;
+  padding: 1px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 1%;
+}
+#target12.correct { 
+  background: green; 
+  float: left;
+  width: 13vw;
+  height: 150px;
+  padding: 1px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 1%;
+}
+ 
+ 
+/* congratulations message */
+#successMessage {
+  position: absolute;
+  left: 480px;
+  top: 200px;
+  width: 0;
+  height: 0;
+  z-index: 100;
+  padding: 20px;
+  background: #ccc;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+  }
+
+
+/*more info message*/
+.message {
+  position: absolute;
+  left: 480px;
+  top: 200px;
+  width: 0;
+  height: 0;
+  z-index: 100;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+}
